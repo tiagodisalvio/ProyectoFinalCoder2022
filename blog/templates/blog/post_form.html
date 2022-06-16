@@ -1,0 +1,21 @@
+{% extends 'index/index.html' %}
+
+
+{% block 'header_block' %}
+{% endblock 'header_block' %}
+
+{% block 'body_block' %}
+
+<h2>Editar Post</h2>
+
+
+    <form action="" method='post'>
+        {% csrf_token %}
+        {{form.media}}
+        {{form}}
+        <button>Guardar</button>
+    </form>
+
+    <a href={% url 'index' %}>Inicio</a>
+
+{% endblock 'body_block' %}

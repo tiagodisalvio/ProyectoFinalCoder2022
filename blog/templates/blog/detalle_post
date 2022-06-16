@@ -1,0 +1,23 @@
+{% extends 'index/index.html' %}
+
+
+{% block 'header_block' %}
+{% endblock 'header_block' %}
+
+{% block 'body_block' %}
+
+    <p>
+        <a href={% url 'lista_post' %}>Volver</a>
+    </p>
+
+
+    <p>
+        <li>Titulo: {{object.titulo}}</li>
+        <li>Subtitulo: {{object.subtitulo}}</li>
+        <li>Contenido: {{object.contenido | safe }}</li>
+        <li>Fecha creación: {{object.fecha_creacion | date:'d-m-Y H:m'}}</li>
+
+    </p>
+
+    <a href={% url 'index' %}>Inicio</a>
+{% endblock 'body_block' %}

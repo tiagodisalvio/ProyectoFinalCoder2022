@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'index/index.html' %}
+
+
+
+{% block 'body_block' %}
+
+<h1>
+    Acerca de mi
+</h1>
+
+<h6>
+    Este blog en Django fue desarrollado por Tiago Di Salvio, quien escribe este parrafo.
+    Vivo en CABA, soy estudiante de Ingenieria en Sistemas Informatica en UAI y actualmente tengo 21 años.
+    <li>El blog fue diseñado para crear un usuario en el apartado de Registrar, donde podran utilizar un nombre de usuario personalizado, colocar su email y contraseña.</li>
+    <li>Al loguearse en el apartado de Login, luego podran editar sus datos de perfil en la seccion Editar, pudiendo asi agregar una imagen, Nombre, Apellido y link a su web.</li>
+    <li>En la seccion de Create Post, podran crear un post en la web y poder visualizarlos en el apartado de Posts.</li>
+</h6>
+<a href={% url 'index' %}>Inicio</a>
+{% endblock 'body_block' %}

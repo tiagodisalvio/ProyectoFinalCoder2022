@@ -1,0 +1,21 @@
+<title>edit_user</title>
+{% extends 'index/index.html' %}
+
+{% block 'header_block' %}
+{% endblock 'header_block' %}
+
+{% block 'body_block' %}
+
+    <h2>Editar user</h2>
+
+    {% if msj %}
+        {{msj}}
+    {% endif %}
+
+    <form action="" method='post' enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_table}}
+        <button>Guardar</button>
+    </form>
+    <a href={% url 'index' %}>Inicio</a>
+{% endblock 'body_block' %}

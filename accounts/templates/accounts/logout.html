@@ -1,0 +1,13 @@
+
+<title>logout</title>
+{% extends 'index/index.html' %}
+
+{% block 'header_block' %}
+{% endblock 'header_block' %}
+
+{% block 'body_block' %}
+
+    <h1>Te deslogueaste correctamente</h1>
+
+    <a href={% url 'index' %}>Inicio</a>
+{% endblock 'body_block' %}
