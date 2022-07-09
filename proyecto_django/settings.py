@@ -59,7 +59,7 @@ ROOT_URLCONF = 'proyecto_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\tiago\Documents\ProyectoFinal\proyecto_django-main'],
+        'DIRS': [r'C:\Users\Daniel Di Salvio\Documents\GitHub\ProyectoFinalCoder2022\index\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
